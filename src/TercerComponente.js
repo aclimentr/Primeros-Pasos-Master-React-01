@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types';
 
-const TercerComponente = ({nombre, apellido, ficha, direccion}) => {
+const TercerComponente = ({nombre, apellido, ficha}) => {
 
     console.log(nombre, apellido, ficha)
 
@@ -12,6 +12,7 @@ const TercerComponente = ({nombre, apellido, ficha, direccion}) => {
             <li>{nombre}</li>
             <li>{apellido}</li>
             <li>{ficha.estado}</li>
+            <li></li>
         </ul>
     </div>
   )
