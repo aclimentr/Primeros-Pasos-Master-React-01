@@ -1,6 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
 import MiComponente from './MiComponente';
+import SegundoComponente from './SegundoComponente';
+import TercerComponente from './TercerComponente';
+
+let ficha_medica = {
+  nombre: 'Alvaro',
+  apellido: 'Climent',
+  estado: 'bueno',
+  direccion: {
+    calle: 'acamar',
+    numero: 69,
+    ciudad: 'Madrid'
+  }
+}
+
 
 function App() {
   return (
@@ -11,7 +25,15 @@ function App() {
           Bienvenido al master en react
         </p>
         {/* Cargar mi primer componente */}
-      <MiComponente />
+      <div className="componentes">
+          <hr/>
+          <TercerComponente nombre="Alvaro" apellido ="Climent" ficha={ficha_medica}/>
+          <hr/>
+          <SegundoComponente/>
+          <hr/>
+          <MiComponente />
+      </div>
+     
       </header>
     </div>
   );
