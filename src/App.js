@@ -3,6 +3,7 @@ import './App.css';
 import MiComponente from './MiComponente';
 import SegundoComponente from './SegundoComponente';
 import TercerComponente from './TercerComponente';
+import EventosComponente from './EventosComponente';
 
 let ficha_medica = {
   nombre: 'Alvaro',
@@ -26,6 +27,8 @@ function App() {
         </p>
         {/* Cargar mi primer componente */}
       <div className="componentes">
+          <hr/>
+          <EventosComponente/>
           <hr/>
           <TercerComponente nombre="Alvaro" apellido ="Climent" ficha={ficha_medica}/>
           <hr/>
