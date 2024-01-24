@@ -49,9 +49,11 @@ const EventosComponente = () => {
         </div>
 
         <p>
+        {/*Evento onFocus onBlur*/}
+
             <input type="text" 
             onFocus={ estasDentro }
-            onBlur={ estasFuera}
+            onBlur={ estasFuera }
             placeholder="Introduce tu nombre" />
         </p>
     </div>
