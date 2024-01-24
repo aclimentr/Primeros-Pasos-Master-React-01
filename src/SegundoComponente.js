@@ -9,16 +9,15 @@ const SegundoComponente = () => {
     <div className='segundo-componente'>
         <h1>Listado de libros:</h1>
 
-    {libros.length >= 1 ? (
-      <ul>
-            { 
-                libros.map((libro, index) => {
-                return <li key={index}>{libro}</li>;
-                })
-            }
-        
+    {libros.length >= 1 ? 
+    (<ul>
+          { 
+            libros.map((libro, index) => {
+              return <li key={index}>{libro}</li>;
+              })
+          }
       </ul>)
-      : (<p>No hay libros disponibles</p>)
+      : <p>No hay libros disponibles</p>
     }
     </div>
   )
